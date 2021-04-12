@@ -143,3 +143,29 @@ header {
 	font-weight: bold;
 	padding: 10px;
 }
+
+.enum table {
+	margin: 15px 0px;
+	background-color: rgba(200,200,200,.5);
+}
+.enum table tr {
+	border-bottom: 1px solid white;
+}
+.enum table tr td:first-child {
+	width: 50%;
+	font-weight: bold;
+}
+.links  {
+	font-size : 18px;
+}
+
+.links li {
+	display: flex;
+	align-items: center;
+}
+
+.links li i {
+	padding-right: 10px;
+	width: 30px;
+	height: auto;
+}

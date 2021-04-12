@@ -3,6 +3,7 @@
 	--gen-seperation:60px;
 }
 
+
 body {
 	padding: 10% 5%;
 }
@@ -123,6 +124,22 @@ header {
 	width: 100%;
 }
 
+.details ul {
+	margin:0px;
+	padding: 0px;
+}
+
 .career {
 	margin-bottom: 30px;
+}
+.company-logo {
+	text-align: right;
+}
+.company-logo img {
+	width: auto;
+	height: 50px;
+}
+.company-header {
+	font-weight: bold;
+	padding: 10px;
 }

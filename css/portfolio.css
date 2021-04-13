@@ -346,9 +346,19 @@ section.section-2 {
 	.design {
 		padding: 10px;
 	}
+	.myskill {
+		margin-top: 550px;
+	}
+	.padd-top {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
 	.connect {
 		padding: 10px;
 		width: 100%;
+	}
+	.skill-wrapper {
+		margin-top: 30px;
 	}
 	nav ul {
 		display: block;

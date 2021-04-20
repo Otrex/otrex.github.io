@@ -181,12 +181,17 @@ header {
 	font-weight: bold;
 }
 .links  {
-	font-size : 18px;
+	font-size : 14px;
+/*	border: 1px solid red;*/
+	word-wrap: break-word;
+	overflow-x: auto;
 }
 
 .links li {
 	display: flex;
 	align-items: center;
+	word-wrap: break-word;
+
 }
 
 .links li i {

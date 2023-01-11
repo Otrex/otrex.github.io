@@ -1,5 +1,5 @@
 :root{
-	--main-text-color : rgba(150,150,150,.8);
+	--main-text-color : rgba(255, 255, 255, 0.8);
 	--header-text-color : white;
 	--bg-1 : rgba(23,23,23,1);
 	--accent-color : rgba(233,165,10,1);
@@ -9,6 +9,11 @@
 }
 ::-webkit-scrollbar {
 	width: 5px;
+}
+
+.font-bold {
+	font-weight: bold;
+	font-size: 50px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -104,9 +109,9 @@ nav ul li a:hover {
 	width: auto;
 }
 
-header {
+/* header {
 	min-height: calc(100vh - 100px);
-}
+} */
 
 .padd-top {
 	padding-top: 150px;
@@ -135,10 +140,10 @@ div.title {
 	width: 40px;
 	display: inline-block;
 }
-.myImage {
+.my-image {
 	overflow: hidden;
 }
-.myImage img {
+.my-image img {
 	width: 175%;
 	transform: translateX(-21%);
 	height: auto;
@@ -154,7 +159,7 @@ div.title {
 
 .accent-link {
 	color: var(--link-accent-color);
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-top: 60px;
 }
 a.accent-link:hover {

@@ -2,7 +2,7 @@ import BlurText from "@/components/animated/BlurText";
 import ClickSpark from "@/components/animated/ClickSpark";
 import Dock from "@/components/animated/Dock";
 import RotatingText from "@/components/animated/RotatingText";
-// import SpotlightCard from "@/components/animated/SpotlightCard";
+import SpotlightCard from "@/components/animated/SpotlightCard";
 import Squares from "@/components/animated/SquareBg";
 import Socials from "@/components/Socials";
 import { Archive, Home, Settings, User } from "lucide-react";
@@ -32,9 +32,12 @@ export default function Page() {
             []
           )}
         </div>
+        <nav className="bg-white py-1 text-center font-bold absolute inset-x-0">
+          ...Under Construction...
+        </nav>
         <section className="max-b-w min-h-screen pt-20 pb-12 relative z-20 flex items-center justify-center">
           <div className="flex flex-col gap-6 items-center  rounded-3xl">
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-14">
+            <div className="flex flex-col sm:flex-row gap-4 px-8 sm:px-0 sm:gap-14">
               <div className="w-full">
                 <BlurText
                   text="Obisike Treasure"
@@ -49,7 +52,7 @@ export default function Page() {
                 <article className="flex  text-3xl font-extrabold gap-2 my-5">
                   <RotatingText
                     texts={["Frontend", "Backend", "Fullstack"]}
-                    mainClassName="px-2 sm:px-2 md:px-3 bg-gray-200 text-black pt-0.5 overflow-hidden justify-center "
+                    mainClassName="px-2 sm:px-2 md:px-3 bg-gradient-to-r from-orange-400 to-purple-500 text-black pt-0.5 overflow-hidden justify-center "
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
@@ -75,44 +78,50 @@ export default function Page() {
             </div>
           </div>
         </section>
-        {/* <section className="max-b-w">
+        <section className="max-b-w pb-32">
           <div className="flex sm:flex-row flex-col gap-4">
-            <SpotlightCard>
+            <SpotlightCard className="w-full sm:w-1/3">
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-                  Frontend Development
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-purple-500 text-transparent bg-clip-text">
+                  Frontend Technologies
                 </h2>
+
                 <p className="text-lg text-gray-300">
-                  Expert in React, Next.js, and modern frontend frameworks with
-                  a focus on creating responsive and performant user interfaces.
+                  Specialized in Vue.js and React development with TypeScript,
+                  creating modern and responsive user interfaces with a focus on
+                  performance and user experience.
                 </p>
               </div>
             </SpotlightCard>
-            <SpotlightCard>
+            <SpotlightCard className="w-full sm:w-1/3">
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-                  Backend Development
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-purple-500 text-transparent bg-clip-text">
+                  Backend Technologies
                 </h2>
+
                 <p className="text-lg text-gray-300">
-                  Proficient in Node.js, Python, and database systems, building
-                  secure and scalable server-side applications.
+                  Proficient in Laravel, PHP, Python, and Node.js with
+                  Express.js, building robust and scalable server-side
+                  applications and APIs.
                 </p>
               </div>
             </SpotlightCard>
-            <SpotlightCard>
+            <SpotlightCard className="w-full sm:w-1/3">
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-                  DevOps & Cloud
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-purple-500 text-transparent bg-clip-text">
+                  Full Stack Expertise
                 </h2>
+
                 <p className="text-lg text-gray-300">
-                  Experienced in AWS, Docker, and CI/CD pipelines, ensuring
-                  smooth deployment and operation of applications.
+                  End-to-end development capabilities, combining frontend and
+                  backend technologies to deliver complete web solutions with
+                  modern architecture patterns.
                 </p>
               </div>
             </SpotlightCard>
           </div>
-        </section> */}
-        <div className="fixed bottom-0 left-0 z-[1000] right-0">
+        </section>
+        <div className="fixed bottom-0 left-0 z-[1000] max-w-[100vw] right-0">
           <Dock
             items={[
               {

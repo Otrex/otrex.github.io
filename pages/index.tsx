@@ -1,82 +1,147 @@
-import { UserCheck2 } from "lucide-react";
+import BlurText from "@/components/animated/BlurText";
+import ClickSpark from "@/components/animated/ClickSpark";
+import Dock from "@/components/animated/Dock";
+import RotatingText from "@/components/animated/RotatingText";
+// import SpotlightCard from "@/components/animated/SpotlightCard";
+import Squares from "@/components/animated/SquareBg";
+import Socials from "@/components/Socials";
+import { Archive, Home, Settings, User } from "lucide-react";
+import { useMemo } from "react";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center text-white p-8">
-      <header className="max-w-4xl mx-auto">
-        <div className="flex flex-col items-center text-center space-y-6">
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur opacity-75"></div>
-            <div className="relative bg-gray-900 rounded-full p-2">
-              <UserCheck2 className="w-24 h-24 " />
-            </div>
-          </div>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-            Obisike Treasure
-          </h1>
-          <p className="text-xl text-gray-400">
-            Fullstack Developer & Technical Writer
-          </p>
-          <div className="flex space-x-4 text-gray-300">
-            <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-cyan-400"
-              >
-                <path d="M12 2L2 22h20L12 2z"></path>
-                <path d="M12 2L7 12h10L12 2z"></path>
-              </svg>
-              <span>Vue.js</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-cyan-400"
-              >
-                <path d="M21 12.79V21H3V3h18v4.79"></path>
-                <path d="M14.5 4.5L12 2L9.5 4.5"></path>
-                <path d="M12 2v10"></path>
-                <path d="M8 19l3-3 3 3"></path>
-              </svg>
-              <span>Laravel</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-cyan-400"
-              >
-                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
-                <path d="M3 12v5h16a2 2 0 0 1 0 4H3v-4"></path>
-              </svg>
-              <span>Express</span>
-            </div>
-          </div>
+    <ClickSpark
+      sparkColor="#fff"
+      sparkSize={10}
+      sparkRadius={15}
+      sparkCount={8}
+      duration={400}
+    >
+      <main className="bg-black relative min-h-screen z-10">
+        <div className="absolute opacity-10 z-[0] inset-0">
+          {useMemo(
+            () => (
+              <Squares
+                speed={0.005}
+                squareSize={40}
+                direction="down"
+                borderColor="#fff"
+                hoverFillColor="#222"
+              />
+            ),
+            []
+          )}
         </div>
-      </header>
-    </div>
+        <section className="max-b-w min-h-screen pt-20 pb-12 relative z-20 flex items-center justify-center">
+          <div className="flex flex-col gap-6 items-center  rounded-3xl">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-14">
+              <div className="w-full">
+                <BlurText
+                  text="Obisike Treasure"
+                  delay={150}
+                  animateBy="words"
+                  onAnimationComplete={() => {
+                    console.log("Animation completed!");
+                  }}
+                  direction="top"
+                  className="text-[5rem] leading-[4.2rem] uppercase font-medium text-gray-100"
+                />
+                <article className="flex  text-3xl font-extrabold gap-2 my-5">
+                  <RotatingText
+                    texts={["Frontend", "Backend", "Fullstack"]}
+                    mainClassName="px-2 sm:px-2 md:px-3 bg-gray-200 text-black pt-0.5 overflow-hidden justify-center "
+                    staggerFrom={"last"}
+                    initial={{ y: "100%" }}
+                    animate={{ y: 0 }}
+                    exit={{ y: "-120%" }}
+                    staggerDuration={0.05}
+                    splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                    rotationInterval={2000}
+                  />
+                  <div className=" text-gray-300 flex items-center">
+                    Developer
+                  </div>
+                </article>
+                <Socials />
+              </div>
+              <div className=" ">
+                <p className="text-gray-400 text-2xl mt-10">
+                  With 5 years of experience crafting robust web applications
+                  and scalable solutions. Passionate about building end-to-end
+                  solutions that make a difference.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section className="max-b-w">
+          <div className="flex sm:flex-row flex-col gap-4">
+            <SpotlightCard>
+              <div className="flex flex-col gap-4">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+                  Frontend Development
+                </h2>
+                <p className="text-lg text-gray-300">
+                  Expert in React, Next.js, and modern frontend frameworks with
+                  a focus on creating responsive and performant user interfaces.
+                </p>
+              </div>
+            </SpotlightCard>
+            <SpotlightCard>
+              <div className="flex flex-col gap-4">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+                  Backend Development
+                </h2>
+                <p className="text-lg text-gray-300">
+                  Proficient in Node.js, Python, and database systems, building
+                  secure and scalable server-side applications.
+                </p>
+              </div>
+            </SpotlightCard>
+            <SpotlightCard>
+              <div className="flex flex-col gap-4">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+                  DevOps & Cloud
+                </h2>
+                <p className="text-lg text-gray-300">
+                  Experienced in AWS, Docker, and CI/CD pipelines, ensuring
+                  smooth deployment and operation of applications.
+                </p>
+              </div>
+            </SpotlightCard>
+          </div>
+        </section> */}
+        <div className="fixed bottom-0 left-0 z-[1000] right-0">
+          <Dock
+            items={[
+              {
+                icon: <Home size={18} className="text-gray-200" />,
+                label: "Home",
+                onClick: () => alert("Home!"),
+              },
+              {
+                icon: <Archive size={18} className="text-gray-200" />,
+                label: "Archive",
+                onClick: () => alert("Archive!"),
+              },
+              {
+                icon: <User size={18} className="text-gray-200" />,
+                label: "Profile",
+                onClick: () => alert("Profile!"),
+              },
+              {
+                icon: <Settings size={18} className="text-gray-200" />,
+                label: "Settings",
+                onClick: () => alert("Settings!"),
+              },
+            ]}
+            panelHeight={68}
+            baseItemSize={50}
+            magnification={70}
+          />
+        </div>
+      </main>
+    </ClickSpark>
   );
 }

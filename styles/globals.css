@@ -133,3 +133,65 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.max-b-w {
+  @apply max-w-[100rem] mx-auto px-4 sm:px-[15%];
+}
+
+.dev,
+.dev * {
+  @apply outline outline-red-600/30;
+}
+
+/* Normal weight for body text */
+.geist-body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium weight for subheadings */
+.geist-medium {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Semi-bold for callouts */
+.geist-semibold {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold for headers */
+.geist-bold {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Extra-bold for strong emphasis */
+.geist-extrabold {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Italic text */
+.geist-italic {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+}

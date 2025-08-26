@@ -85,10 +85,118 @@
   }
 }
 
+/* Normal weight for body text */
+.edu-nsw-act-cursive-body {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium weight for subheadings */
+.edu-nsw-act-cursive-medium {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Semi-bold for callouts */
+.edu-nsw-act-cursive-semibold {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold for headers */
+.edu-nsw-act-cursive-bold {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Extra-bold for strong emphasis */
+.edu-nsw-act-cursive-extrabold {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Italic text */
+.edu-nsw-act-cursive-italic {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .dark {

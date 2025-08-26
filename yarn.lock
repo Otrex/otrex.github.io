@@ -380,6 +380,18 @@
   resolved "https://registry.yarnpkg.com/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz#3dc35ba0f1e66b403c00b39344f870298ebb1c8e"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
+"@radix-ui/react-compose-refs@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz#a2c4c47af6337048ee78ff6dc0d090b390d2bb30"
+  integrity sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==
+
+"@radix-ui/react-slot@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-1.2.3.tgz#502d6e354fc847d4169c3bc5f189de777f68cfe1"
+  integrity sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==
+  dependencies:
+    "@radix-ui/react-compose-refs" "1.1.2"
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
@@ -1565,6 +1577,15 @@ framer-motion@^12.16.0:
     motion-utils "^12.12.1"
     tslib "^2.4.0"
 
+framer-motion@^12.23.12:
+  version "12.23.12"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.23.12.tgz#80cf6fd7c111073a0c558e336c85ca36cca80d3d"
+  integrity sha512-6e78rdVtnBvlEVgu6eFEAgG9v3wLnYEboM8I5O5EXvfKC8gxGQB8wXJdhkMy10iVcn05jl6CNw7/HTsTCfwcWg==
+  dependencies:
+    motion-dom "^12.23.12"
+    motion-utils "^12.23.6"
+    tslib "^2.4.0"
+
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.2.tgz#2c02d864d97f3ea6c8830c464cbd11ab6eab7a1c"
@@ -2123,10 +2144,10 @@ loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lucide-react@^0.511.0:
-  version "0.511.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.511.0.tgz#1dfef3065c725ac83f5fe0a6f02d1e0b0c36e641"
-  integrity sha512-VK5a2ydJ7xm8GvBeKLS9mu1pVK6ucef9780JVUjw6bAjJL/QXnd4Y0p7SPeOUMC27YhzNCZvm5d/QX0Tp3rc0w==
+lucide-react@^0.542.0:
+  version "0.542.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.542.0.tgz#3f170afb0c5697e3e21230b6d69ad8a1be6b281a"
+  integrity sha512-w3hD8/SQB7+lzU2r4VdFyzzOzKnUjTZIF/MQJGSSvni7Llewni4vuViRppfRAa2guOsY5k4jZyxw/i9DQHv+dw==
 
 magic-string@^0.30.17:
   version "0.30.17"
@@ -2196,10 +2217,30 @@ motion-dom@^12.16.0:
   dependencies:
     motion-utils "^12.12.1"
 
+motion-dom@^12.23.12:
+  version "12.23.12"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.23.12.tgz#87974046e7e61bc4932f36d35e8eab6bb6f3e434"
+  integrity sha512-RcR4fvMCTESQBD/uKQe49D5RUeDOokkGRmz4ceaJKDBgHYtZtntC/s2vLvY38gqGaytinij/yi3hMcWVcEF5Kw==
+  dependencies:
+    motion-utils "^12.23.6"
+
 motion-utils@^12.12.1:
   version "12.12.1"
   resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.12.1.tgz#63e28751325cb9d1cd684f3c273a570022b0010e"
   integrity sha512-f9qiqUHm7hWSLlNW8gS9pisnsN7CRFRD58vNjptKdsqFLpkVnX00TNeD6Q0d27V9KzT7ySFyK1TZ/DShfVOv6w==
+
+motion-utils@^12.23.6:
+  version "12.23.6"
+  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.23.6.tgz#fafef80b4ea85122dd0d6c599a0c63d72881f312"
+  integrity sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==
+
+motion@^12.23.12:
+  version "12.23.12"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-12.23.12.tgz#9f3552636c1e94911eee42e6f85db8f60db83c19"
+  integrity sha512-8jCD8uW5GD1csOoqh1WhH1A6j5APHVE15nuBkFeRiMzYBdRwyAHmSP/oXSuW0WJPZRXTFdBoG4hY9TFWNhhwng==
+  dependencies:
+    framer-motion "^12.23.12"
+    tslib "^2.4.0"
 
 ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
@@ -2220,6 +2261,11 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
+
+next-themes@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.6.tgz#8d7e92d03b8fea6582892a50a928c9b23502e8b6"
+  integrity sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==
 
 next@15.3.2:
   version "15.3.2"
@@ -2440,6 +2486,11 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-use-measure@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/react-use-measure/-/react-use-measure-2.1.7.tgz#36b8a2e7fd2fa58109ab851b3addcb0aad66ad1d"
+  integrity sha512-KrvcAo13I/60HpwGO5jpW7E9DfusKyLPLvuHlUyP5zqnmAPhNc6qTRjUQrdTADl0lpPpDVU2/Gg51UlOGHXbdg==
 
 react@^19.0.0:
   version "19.1.0"

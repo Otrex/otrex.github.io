@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Socials() {
   return (
-    <div>
-      <div className="flex gap-4 mt-6 ">
+    <div className="">
+      <div className="flex gap-4  ">
         <a
           href="https://linkedin.com/in/otrex"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-gray-200 transition-colors"
+          className="text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-200 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ export default function Socials() {
           href="https://github.com/otrex"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-gray-200 transition-colors"
+          className="text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-200 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function Socials() {
           href="https://twitter.com/otrex__"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-gray-200 transition-colors"
+          className="text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-200 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

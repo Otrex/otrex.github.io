@@ -1,0 +1,293 @@
+{
+  "title": "Fullstack Developer",
+  "personal_information": {
+    "first_name": "Treasure",
+    "last_name": "Obisike",
+    "middle_name": "Chimeziri",
+    "contact": {
+      "email": "obisiket@gmail.com",
+      "phone": "+44 744 8319 476"
+    },
+    "address": {
+      "street": "Flat 11, Collins House, Huntly road",
+      "city": "Birmingham",
+      "state": "Birmingham",
+      "country": "United Kingdom",
+      "post_code": "B16 8JR"
+    },
+    "links": {
+      "website": "https://otrex.github.io",
+      "linkedin": "https://www.linkedin.com/in/otrex",
+      "github": "https://github.com/otrex"
+    }
+  },
+  "summary": {
+    "professional": "Experienced software developer with a strong background in web development and a passion for creating innovative solutions."
+  },
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "degree_short": "BSc",
+    "institution": "University of Portharcourt",
+    "graduation_date": "02/2019",
+    "field_of_study": "Mathematics and Computer Science"
+  },
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    }
+  ],
+  "skills": {
+    "languages": ["PHP", "JavaScript", "TypeScript", "Python"],
+    "frontend": [
+      "Vue 2/3",
+      "React",
+      "Next.js",
+      "Nuxt.js",
+      "Tailwind CSS",
+      "Inertia.js",
+      "Ionic + Capacitor",
+      "React Native",
+      "Figma"
+    ],
+    "backend": ["Laravel", "Node.js (Express.js)", "FastAPI", "Flask"],
+    "databases": ["MySQL", "Postgres", "MongoDB", "Redis"],
+    "devops": [
+      "Docker",
+      "GCP",
+      "AWS",
+      "Azure",
+      "Kubernetes",
+      "CI/CD (GitHub Actions, GitLab CI)"
+    ],
+    "other": ["OpenAPI/Swagger", "FFmpeg", "Postman"]
+  },
+  "experience": [
+    {
+      "company": "Dinesurf",
+      "role": "Lead Full-Stack Developer (Frontend heavy)",
+      "location": "Remote",
+      "period": "May 2024 - Present",
+      "stack": [
+        "Vue.js",
+        "PHP (Laravel)",
+        "Next.js",
+        "Inertia.js",
+        "Tailwind CSS",
+        "Docker",
+        "GCP",
+        "MySQL",
+        "Laravel Forge",
+        "Redis"
+      ],
+      "projects": [
+        "https://vendor.dinesurf.com",
+        "https://mastercard.dinesurf.com",
+        "https://dinelists.com"
+      ],
+      "highlights": [
+        "Rebuilt vendor dashboard using Vue 3 and Tailwind CSS.",
+        "Refactored Laravel API routes for maintainability.",
+        "Implemented middleware for validation, rate limiting, and security.",
+        "Developed Next.js campaign platform for Mastercard.",
+        "Created Dinelists.com lead capture site.",
+        "Dockerized backend environment for consistency."
+      ]
+    },
+    {
+      "company": "Tronweb",
+      "role": "Full-Stack Developer",
+      "location": "Remote",
+      "period": "May 2022 - April 2024",
+      "stack": [
+        "Vue",
+        "Nuxt.js",
+        "PHP (Laravel)",
+        "Flask",
+        "Node.js",
+        "MySQL",
+        "Redis",
+        "AWS",
+        "Azure",
+        "S3",
+        "Nginx",
+        "Apache"
+      ],
+      "projects": [
+        "https://app.usemarshal.co",
+        "https://app.usesoteria.com",
+        "https://app.socialagency360.com",
+        "https://app.useagencyai.com",
+        "https://linkdominator.com"
+      ],
+      "highlights": [
+        "Built frontend components and ADA-compliant widgets.",
+        "Developed AI social post generator in Laravel platform.",
+        "Contributed to Soteria's WordPress plugin.",
+        "Designed REST APIs for website editor and dashboard.",
+        "Migrated Flask AI video API to Node.js, reducing latency by 30%.",
+        "Worked across GCP, AWS, and Azure for deployments.",
+        "Built standalone website editor with integrations.",
+        "Managed Postman collections and OAuth-based authentication.",
+        "Contributed to Wedfuse Dating React Native app."
+      ]
+    },
+    {
+      "company": "Xtellar",
+      "role": "Frontend Developer (Contract)",
+      "location": "Remote",
+      "period": "Feb 2022 - June 2022",
+      "stack": [
+        "Vue 3",
+        "Ionic + Capacitor.js",
+        "TypeScript",
+        "Express.js",
+        "MySQL",
+        "Redis",
+        "AWS EKS"
+      ],
+      "highlights": [
+        "Built cross-platform UIs from Figma designs.",
+        "Extended Express.js APIs with JWT and OAuth2 authentication.",
+        "Optimized AWS EKS configuration to improve uptime (99.9%)."
+      ]
+    },
+    {
+      "company": "Chigisoft",
+      "role": "Full-Stack Developer",
+      "location": "Remote",
+      "period": "April 2020 - April 2022",
+      "stack": [
+        "Vue",
+        "React",
+        "Laravel",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "Docker",
+        "Kubernetes",
+        "GitLab CI"
+      ],
+      "highlights": [
+        "Built UI for DFLab using Vue.js.",
+        "Created reusable Nuxt/Vue.js component libraries.",
+        "Designed APIs with OpenAPI (Swagger).",
+        "Implemented RBAC, request validation, and rate-limiting.",
+        "Improved architecture of Rivers state RSVP Laravel app.",
+        "Integrated monitoring tools like New Relic.",
+        "Supported CI/CD and deployments with GitLab CI and Docker."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Fikets – Event Management Platform",
+      "role": "Co-founder",
+      "stack": [
+        "PHP (Laravel)",
+        "Vue.js",
+        "Tailwind CSS",
+        "MySQL",
+        "Inertia.js",
+        "Postgres"
+      ],
+      "url": "https://fikets.com",
+      "highlights": [
+        "Built event listing, ticketing, dashboards, and authentication.",
+        "Integrated secure payments.",
+        "Optimized performance and product delivery."
+      ]
+    },
+    {
+      "name": "Telage Concepts (Blip School)",
+      "role": "Freelance",
+      "stack": ["Slim", "PHP (Laravel)", "Alpine", "Livewire"],
+      "url": "https://blip.school",
+      "highlights": [
+        "Integrated Paystack for payments.",
+        "Resolved bugs improving speed and reliability.",
+        "Added multi-currency support to fintech app."
+      ]
+    },
+    {
+      "name": "Paycom (Personal project)",
+      "role": "Developer",
+      "stack": ["React Native"],
+      "url": "https://github.com/Otrex/my-payment-app",
+      "highlights": [
+        "Built mobile payment app with QR scanning.",
+        "Added transaction previews.",
+        "Designed clear UI interactions for payments."
+      ]
+    }
+  ],
+  "open_source": [
+    {
+      "name": "@obisiket1/express-utils",
+      "description": "TypeScript decorators for routing and request validation."
+    },
+    {
+      "name": "Mail-template-sender",
+      "description": "Node.js utility for API-based email delivery with templating support."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Custom OTP input component with VueJS",
+      "description": "A guide to building a reusable OTP input component using VueJS.",
+      "link": ""
+    },
+    {
+      "title": "Steps to manipulating MongoDB with AI",
+      "description": "Learn how to leverage AI for efficient MongoDB data manipulation."
+    },
+    {
+      "title": "Distribute Mobile Apps Artifacts via Telegram using Codemagic",
+      "description": "Automate the distribution of mobile app artifacts through Telegram."
+    },
+    {
+      "title": "Live Streaming with Mux and Nuxt.js",
+      "description": "Integrate Mux for live streaming in your Nuxt.js applications."
+    },
+    {
+      "title": "Cross-platform development using Ionic+Capacitor",
+      "description": "Build cross-platform apps using Ionic and Capacitor."
+    },
+    {
+      "title": "Quickly build UI components with AI",
+      "description": "Leverage AI to accelerate UI component development."
+    },
+    {
+      "title": "Introduction to FastAPI",
+      "description": "Get started with FastAPI for building APIs."
+    },
+    {
+      "title": "Automate Appwrite Functions Deployment with GitHub",
+      "description": "Streamline Appwrite functions deployment using GitHub Actions."
+    },
+    {
+      "title": "Docker Swarm with Appwrite and Swarmpit",
+      "description": "Manage Appwrite instances in a Docker Swarm with Swarmpit."
+    },
+    {
+      "title": "How to Create Engaging Django Landing Pages with ButterCMS",
+      "description": "Learn how to create engaging landing pages for your Django applications using ButterCMS."
+    },
+    {
+      "title": "How to Add a Plug & Play Blog to Your Java App Using ButterCMS",
+      "description": "Integrate a blog into your Java application effortlessly with ButterCMS."
+    },
+    {
+      "title": "How to collect marketing campaign email leads with Mailgun and Appwrite in minutes",
+      "description": "Quickly set up email lead collection for your marketing campaigns using Mailgun and Appwrite."
+    },
+    {
+      "title": "How to add DigitalOceans Spaces adapter to an Appwrite instance",
+      "description": "Extend your Appwrite instance with DigitalOcean Spaces for scalable file storage."
+    },
+    {
+      "title": "How to Add a Blog to Your Golang Application in Minutes with ButterCMS",
+      "description": "Easily integrate a blog into your Golang application using ButterCMS."
+    }
+  ]
+}

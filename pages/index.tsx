@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe";
 import Dock from "@/components/animated/Dock";
 import Hero from "@/components/Hero";
 
@@ -53,6 +54,7 @@ export default function Page() {
       <TopNav />
 
       <Hero />
+      <AboutMe />
 
       <div className="fixed bottom-0 left-0 z-[1000] max-w-[100vw] right-0">
         <Dock

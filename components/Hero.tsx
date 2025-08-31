@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { AppleHelloEnglishEffect } from "./ui/shadcn-io/apple-hello-effect";
 import { cn } from "@/lib/utils";
 import { TypingText } from "./ui/shadcn-io/typing-text";
+import { RippleButton } from "./ui/shadcn-io/ripple-button";
 
 export default function Hero() {
   const [showName, setShowName] = useState(false);
@@ -30,7 +31,7 @@ export default function Hero() {
         />
         {showName && (
           <TypingText
-            className="sm:text-5xl text-3xl neg saira-bold mt-4 "
+            className="sm:text-5xl text-3xl tracking-tight neg saira-bold mt-4 "
             text="I'm Obisike Treasure"
             duration={10}
           />
@@ -45,9 +46,12 @@ export default function Hero() {
           />
         )}
         {showButton && (
-          <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded">
-            Get Started
-          </button>
+          <div className="inline-flex gap-3">
+            <RippleButton className="mt-4">Checkout my work</RippleButton>
+            <RippleButton variant="outline" className="mt-4">
+              Contact me
+            </RippleButton>
+          </div>
         )}
       </div>
     </section>

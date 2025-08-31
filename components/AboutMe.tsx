@@ -11,7 +11,7 @@ export default function AboutMe() {
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-purple-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-700 dark:from-orange-400 to-purple-500 text-transparent bg-clip-text">
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

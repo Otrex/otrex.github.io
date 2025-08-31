@@ -77,13 +77,13 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 /* Normal weight for body text */
 .edu-nsw-act-cursive-body {
@@ -193,10 +193,55 @@
   font-style: italic;
 }
 
+/* Normal weight for body text */
+.saira-body {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Medium weight for subheadings */
+.saira-medium {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Semi-bold for callouts */
+.saira-semibold {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Bold for headers */
+.saira-bold {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Extra-bold for strong emphasis */
+.saira-extrabold {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
 }
 
 .dark {
@@ -302,4 +347,8 @@ body {
 * {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
+}
+
+.transit-all:not(.neg) * {
+  @apply transition-all duration-300 ease-in-out;
 }

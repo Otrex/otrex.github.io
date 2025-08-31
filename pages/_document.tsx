@@ -18,7 +18,7 @@ export default function Document() {
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
         <Script id="theme-toggle" strategy="afterInteractive">
@@ -34,7 +34,7 @@ export default function Document() {
           `}
         </Script>
       </Head>
-      <body className="antialiased bg-black">
+      <body className="antialiased bg-white dark:bg-black">
         <Main />
         <NextScript />
       </body>

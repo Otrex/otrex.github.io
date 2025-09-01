@@ -42,6 +42,7 @@ type TypingTextProps = Omit<React.ComponentProps<"span">, "children"> & {
   text: string | string[];
   cursorClassName?: string;
   animateOnChange?: boolean;
+  echoComplete?: () => void;
 };
 
 function TypingText({
@@ -57,6 +58,7 @@ function TypingText({
   text,
   cursorClassName,
   animateOnChange = true,
+  echoComplete,
   ...props
 }: TypingTextProps) {
   const localRef = React.useRef<HTMLSpanElement>(null);
@@ -130,7 +132,7 @@ function TypingText({
       typeText(texts[index] ?? "", () => {
         const isLast = index === texts.length - 1;
         if (isLast && !loop) {
-          return;
+          return echoComplete?.();
         }
         const id = setTimeout(() => {
           eraseText(texts[index] ?? "", () => {

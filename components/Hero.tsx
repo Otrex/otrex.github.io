@@ -21,19 +21,16 @@ export default function Hero() {
           className={cn("dark:text-white", showName && "scale-60 -mb-2")}
           onAnimationComplete={() => {
             setShowName(true);
-            setTimeout(() => {
-              setShowProfession(true);
-              setTimeout(() => {
-                setShowButton(true);
-              }, 2000);
-            }, 1500);
           }}
         />
         {showName && (
           <TypingText
             className="sm:text-5xl text-3xl tracking-tight neg saira-bold mt-4 "
             text="I'm Obisike Treasure"
-            duration={10}
+            duration={1}
+            echoComplete={() => {
+              setShowProfession(true);
+            }}
           />
         )}
         {showProfession && (
@@ -41,7 +38,10 @@ export default function Hero() {
             className="sm:text-lg text-base neg"
             text="Full-Stack Developer | Technical Writer"
             cursor
-            duration={10}
+            duration={0.5}
+            echoComplete={() => {
+              setShowButton(true);
+            }}
             cursorClassName="h-6"
           />
         )}

@@ -64,10 +64,26 @@
   },
   "experience": [
     {
+      "company": "Cavendish",
+      "role": "Frontend Developer",
+      "location": "Hybrid (Remote/On-site in Birmingham)",
+      "period": "Sept 2025 - Present",
+      "highlights": [],
+      "projects": [],
+      "stack": [
+        "Tailwind CSS",
+        "React",
+        "PHP (Laravel)",
+        "MySQL",
+        "Redis",
+        "Docker"
+      ]
+    },
+    {
       "company": "Dinesurf",
       "role": "Lead Full-Stack Developer (Frontend heavy)",
       "location": "Remote",
-      "period": "May 2024 - Present",
+      "period": "May 2024 - Aug 2025",
       "stack": [
         "Vue.js",
         "PHP (Laravel)",
@@ -224,11 +240,13 @@
   "open_source": [
     {
       "name": "@obisiket1/express-utils",
-      "description": "TypeScript decorators for routing and request validation."
+      "description": "TypeScript decorators for routing and request validation.",
+      "url": "https://www.npmjs.com/package/@obisiket1/express-utils"
     },
     {
       "name": "Mail-template-sender",
-      "description": "Node.js utility for API-based email delivery with templating support."
+      "description": "Node.js utility for API-based email delivery with templating support.",
+      "url": ""
     }
   ],
   "articles": [

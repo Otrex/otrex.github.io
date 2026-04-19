@@ -72,9 +72,18 @@ function TypingText({
 
   const [started, setStarted] = React.useState(false);
   const [displayedText, setDisplayedText] = React.useState<string>("");
+  const echoCompleteRef = React.useRef(echoComplete);
+  const textKey = React.useMemo(
+    () => (typeof text === "string" ? text : JSON.stringify(text)),
+    [text]
+  );
+  const resetKey = animateOnChange ? textKey : "static";
 
   React.useEffect(() => {
-    // Reset animation when text changes (if animateOnChange is true)
+    echoCompleteRef.current = echoComplete;
+  }, [echoComplete]);
+
+  React.useEffect(() => {
     if (animateOnChange) {
       setStarted(false);
       setDisplayedText("");
@@ -91,7 +100,7 @@ function TypingText({
       }, delay);
       return () => clearTimeout(timeoutId);
     }
-  }, [isInView, delay, ...(animateOnChange ? [text] : [])]);
+  }, [animateOnChange, delay, isInView, resetKey]);
 
   React.useEffect(() => {
     if (!started) return;
@@ -132,7 +141,7 @@ function TypingText({
       typeText(texts[index] ?? "", () => {
         const isLast = index === texts.length - 1;
         if (isLast && !loop) {
-          return echoComplete?.();
+          return echoCompleteRef.current?.();
         }
         const id = setTimeout(() => {
           eraseText(texts[index] ?? "", () => {

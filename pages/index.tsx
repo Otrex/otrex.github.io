@@ -2,44 +2,33 @@ import AboutMe from "@/components/AboutMe";
 import Dock from "@/components/animated/Dock";
 import Hero from "@/components/Hero";
 
+import QuestHub from "@/components/QuestHub";
 import TopNav from "@/components/TopNav";
+import WorkShowcase from "@/components/WorkShowcase";
 import {
   Announcement,
   AnnouncementTag,
   AnnouncementTitle,
 } from "@/components/ui/shadcn-io/announcement";
-import { DotPattern } from "@/components/ui/shadcn-io/dot-pattern";
-import { Archive, Home, InfoIcon, Settings, User } from "lucide-react";
-import { useMemo } from "react";
-
-// <SpotlightCard className="w-full sm:w-1/3">
-//               <div className="flex flex-col gap-4">
-//                 <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-purple-500 text-transparent bg-clip-text">
-//                   Frontend Technologies
-//                 </h2>
-
-//                 <p className="text-lg text-gray-300">
-//                   Specialized in Vue.js and React development with TypeScript,
-//                   creating modern and responsive user interfaces with a focus on
-//                   performance and user experience.
-//                 </p>
-//               </div>
-//             </SpotlightCard>
+import {
+  Archive,
+  Briefcase,
+  Code2,
+  Gamepad2,
+  Home,
+  InfoIcon,
+  User,
+} from "lucide-react";
 
 export default function Page() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <main className="relative min-h-screen z-10">
-      {useMemo(
-        () => (
-          <DotPattern
-            className="absolute inset-0 text-neutral-400"
-            width={20}
-            height={20}
-            glow={true}
-          />
-        ),
-        []
-      )}
+    <main className="relative min-h-screen overflow-x-hidden z-10">
+      <div aria-hidden="true" className="portfolio-grid-bg" />
+      <div aria-hidden="true" className="portfolio-sweep-bg" />
 
       <div className="fixed top-12 left-1/2 -translate-x-1/2 z-50">
         <Announcement>
@@ -54,7 +43,9 @@ export default function Page() {
       <TopNav />
 
       <Hero />
+      <QuestHub />
       <AboutMe />
+      <WorkShowcase />
 
       <div className="fixed bottom-0 left-0 z-[1000] max-w-[100vw] right-0">
         <Dock
@@ -62,22 +53,34 @@ export default function Page() {
             {
               icon: <Home size={18} className="dark:text-gray-200" />,
               label: "Home",
-              onClick: () => alert("Home!"),
+              onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
             },
             {
-              icon: <Archive size={18} className="dark:text-gray-200" />,
-              label: "Archive",
-              onClick: () => alert("Archive!"),
+              icon: <Gamepad2 size={18} className="dark:text-gray-200" />,
+              label: "Quests",
+              onClick: () => scrollToSection("quests"),
             },
             {
               icon: <User size={18} className="dark:text-gray-200" />,
-              label: "Profile",
-              onClick: () => alert("Profile!"),
+              label: "About",
+              onClick: () => scrollToSection("about"),
             },
             {
-              icon: <Settings size={18} className="dark:text-gray-200" />,
-              label: "Settings",
-              onClick: () => alert("Settings!"),
+              icon: <Briefcase size={18} className="dark:text-gray-200" />,
+              label: "Work",
+              onClick: () => scrollToSection("experience"),
+            },
+            {
+              icon: <Code2 size={18} className="dark:text-gray-200" />,
+              label: "Projects",
+              onClick: () => scrollToSection("projects"),
+            },
+            {
+              icon: <Archive size={18} className="dark:text-gray-200" />,
+              label: "Data",
+              onClick: () => {
+                window.location.href = "/json";
+              },
             },
           ]}
           spring={{
@@ -86,8 +89,8 @@ export default function Page() {
             damping: 10,
           }}
           panelHeight={60}
-          baseItemSize={42}
-          magnification={60}
+          baseItemSize={38}
+          magnification={54}
         />
       </div>
     </main>

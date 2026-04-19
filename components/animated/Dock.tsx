@@ -88,7 +88,13 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-lg dark:bg-[#060606] hover:bg-white bg-white dark:hover:bg-gray-900 dark:border-neutral-800 border  ${className}`}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          onClick?.();
+        }
+      }}
+      className={`relative inline-flex items-center justify-center rounded-lg border border-border/70 bg-background/90 text-foreground transition-colors hover:border-foreground/30 hover:bg-muted/70 ${className}`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
@@ -124,7 +130,7 @@ function DockLabel({ children, className = "", ...rest }: DockLabelProps) {
           animate={{ opacity: 1, y: -10 }}
           exit={{ opacity: 0, y: 0 }}
           transition={{ duration: 0.2 }}
-          className={`${className} absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-neutral-800 dark:bg-[#060606] bg-white px-2 py-1 text-xs dark:text-white`}
+          className={`${className} tech-code absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-border/70 bg-background px-2 py-1 text-xs text-foreground shadow-sm`}
           role="tooltip"
           style={{ x: "-50%" }}
         >
@@ -182,10 +188,10 @@ export default function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} absolute bottom-4 left-1/2 transform bg-white dark:bg-black -translate-x-1/2 flex items-end w-fit gap-4 rounded-2xl dark:border-neutral-800 border shadow-xl pb-3 px-4`}
+        className={`${className} tech-panel absolute bottom-4 left-1/2 flex w-fit -translate-x-1/2 transform items-end gap-3 rounded-lg border border-border/70 bg-background/90 px-4 pb-3 backdrop-blur`}
         style={{ height: panelHeight + 10 }}
         role="toolbar"
-        aria-label="Application dock"
+        aria-label="Portfolio navigation"
       >
         {items.map((item, index) => (
           <DockItem
